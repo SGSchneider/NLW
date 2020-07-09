@@ -1,34 +1,7 @@
-:root{
-    --title-color: #322153;
-    --primary-color: #34cb79;
-}
-
-*{
-    margin: 0;
-    padding: 0;
-}
-
-html{
-    font-family: 'Roboto', sans-serif;
-}
-
-body{
-    background: #f0f0f5;
-    -webkit-font-smoothing: antialised;
-}
-
-a{
-    text-decoration: none;
-}
-
-h1, h2, h3, h4, h5, h6{
-    color: var(--title-color);
-    font-family: 'Ubuntu', sans-serif;
-}
 
 #page-home{
     height: 100vh;
-    background: url('../public/icones/home-background.svg') no-repeat;
+    background: url('../assets/home-background.svg') no-repeat;
     background-position: 35vw bottom;
 }
 
@@ -48,7 +21,7 @@ h1, h2, h3, h4, h5, h6{
 
 #page-home header a span{
     display: flex;
-    background-image: url('../public/icones/log-in.svg');
+    background-image: url('../assets/log-in.svg');
     width: 20px;
     height: 20px;
     margin-right: 7px;
@@ -93,7 +66,7 @@ h1, h2, h3, h4, h5, h6{
     display: flex;
     align-items: center;
     background: var(--primary-color);
-    transition: 400ms;
+    transition: background-color 400ms;
 }
 
 #page-home main a:hover{
@@ -113,7 +86,7 @@ h1, h2, h3, h4, h5, h6{
 }
 #page-home main a span::after{
     content: "";
-    background-image: url('../public/icones/search.svg');
+    background-image: url('../assets/search.svg');
     width: 20px;
     height: 20px;
 }
@@ -122,27 +95,4 @@ h1, h2, h3, h4, h5, h6{
     flex:1;
     color:white;
     text-align: center;
-}
-
-
-@media (max-width: 900px){
-    #page-home{
-        background-position: 70vw;
-    }
-
-    #page-home .content{
-        align-items: center;
-        text-align: center;
-    }
-
-    #page-home header a{
-        position: absolute;
-        bottom: 48px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    #page-home main{
-        align-items: center;
-    }
 }
